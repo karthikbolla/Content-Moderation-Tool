@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Moderation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <img src="static/logo-no-background.png" alt="Logo" class="logo">
+
+    <h1>Content Moderation</h1>
+    <div class="upload-section">
+      <h2>Upload Video File</h2>
+      <input type="file" id="videoFile" accept="video/*">
+    </div>
+    <div class="upload-section">
+      <h2>Submit Video URL</h2>
+      <input type="text" id="videoURL" placeholder="Enter video URL">
+      <!-- <button onclick="analyzeURL()">Analyze</button> -->
+      <input type="submit" name="Analyze" value="Analyze">
+    </div>
+    <div class="result">
+      <h2>Analysis Result:</h2>
+      <p id="analysisResult">-</p>
+    </div>
+      <video width="480" height="360" controls>
+    <source src="static/output.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+  </div>
+
+  <script>
+    function analyzeURL() {
+      // This function would handle the analysis of the video URL
+      // You can implement your analysis logic here
+      // For this example, let's assume it returns a result
+      const result = "U/A"; // Change this based on your analysis
+      document.getElementById("analysisResult").innerText = result;
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+<style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.upload-section h2 {
+  margin-bottom: 10px;
+}
+
+input[type="file"],
+input[type="text"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.result {
+  text-align: center;
+}
+
+.result h2 {
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 20%;
+}
+
+#analysisResult {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+</style>

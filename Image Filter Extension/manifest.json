@@ -1,0 +1,39 @@
+{
+   "author": "Optic Optimizers",
+   "background": {
+      "persistent": true,
+      "scripts": [ "src/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/logo-color.png",
+         "16": "images/logo-color.png",
+         "32": "images/logo-color.png",
+         "48": "images/logo-color.png"
+      },
+      "default_popup": "src/popup.html",
+      "default_title": "Optic Optimizers"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "src/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "A Filter to blur NSFW content by Optic Optimizers",
+   "homepage_url": "https://kareopensourcesociety.netlify.app/",
+   "icons": {
+      "128": "images/logo-color.png",
+      "16": "images/logo-color.png",
+      "32": "images/logo-color.png",
+      "48": "images/logo-color.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmFgIxULfkdmkmwAgnw5OVwgy8RhUJZGvmbQvgichR70zMIjrhmSSc0VwTXs6L7b2+9z0wB3P9PF30oJkSMum8FzriqdNxQlAzL/NKW12zQWqQDzJgwihEf8CCrZcKutjx/NB2dFUtCCE6Vhkid4U3W/0d9pQ0XpWvoFWEPTWqFnIRdeQ8XqSRh46cK22moT+oMrU164JPyAaPP2SctvHhaObhp49/MDtJCKNlgeIuvkxeMJgEuIb76zX8ema8iRSjLQuNJckG6wyWMNmaRwRfHGrEAEtnV0Q39t/rA/MyMtynG8TN72tXKGtS9NBj4wllsSh6EZQv2LD5XETKbDU5wIDAQAB",
+   "manifest_version": 2,
+   "name": "Optic Optimizers - nsfw",
+   "permissions": [ "\u003Call_urls>", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.0",
+   "web_accessible_resources": [ "models/*, images/*" ]
+}
