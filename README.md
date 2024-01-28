@@ -1,7 +1,5 @@
 # Content Moderation Tool
 
-![Tool Logo](link/to/your/logo.png)
-
 ## Overview
 
 The Content Moderation Tool is a powerful solution to filter and moderate NSFW (Not Safe For Work) content in images and videos from the internet in real-time. The tool is equipped with three main components:
@@ -27,4 +25,22 @@ The Content Moderation Tool is a powerful solution to filter and moderate NSFW (
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/image-filter-extension.git
+   git clone https://github.com/karthikbolla/image-filter-extension.git
+
+2. Open your preferred web browser and navigate to the extensions management page.
+
+- For Chrome, enter chrome://extensions/ in the address bar.
+- For Firefox, enter about:addons in the address bar.
+
+3. Enable "Developer mode" (usually a toggle switch on the top-right).
+
+4. Click on "Load unpacked" and select the folder where you cloned the Image Filter Extension.
+
+5. The extension is now installed in developer mode and will blur images with NSFW content as you browse the internet.
+
+### Internet Video Filter Extension
+
+1. Clone this repository to your local machine.
+
+2. ```bash
+   git clone https://github.com/karthikbolla/image-filter-extension.git
