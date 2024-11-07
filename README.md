@@ -73,17 +73,24 @@ After installation, the Internet Video Filter Extension will provide real-time N
 3. The tool will process the video and generate an output video with blurred NSFW content.
 4. Download the processed video from the application.
 
+## Model Architecture
+
+- **Base Model**: ResNet-101, fine-tuned on a custom NSFW dataset.
+- **Pruning Techniques**: Applied to reduce model size without significantly affecting accuracy.
+- **Deployment**: Converted to TensorFlow Lite (TFLite) for efficient edge inference on CPU.
+
+## Technologies Used
+
+- **Frameworks**: TensorFlow, Keras
+- **Deployment**: Flask, TensorFlow Lite
+- **Other Tools**: Docker, OpenCV
+
+## Team
+
+- [Narla Venkata Anand Sai Kumar](https://github.com/narla-venkata-anand-sai-Kumar)
+- [Karthik Taraka Sai Bolla](https://github.com/karthikbolla)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [OpenCV](https://opencv.org/) for image and video processing.
-- [TensorFlow](https://www.tensorflow.org/) for machine learning models.
-- All contributors and users for their support and feedback.
-
-## Contact
-
-For any inquiries or support, please contact us at karthikbolla123@gmail.com.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
